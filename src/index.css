@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100vh;
+}
+
+form {
+  @apply w-80 m-auto bg-crimson-2 border-2 border-crimson-8 rounded-lg p-10;
+}
+
+fieldset {
+  @apply flex flex-col gap-2;
+}
+
+div {
+  @apply flex flex-col;
+}
+
+label {
+  @apply mb-2 text-crimson-11;
+}
+
+input,
+select {
+  @apply px-2 py-1 border-2 border-crimson-8 rounded-xl focus:outline-crimson-9 bg-crimson-1 text-crimson-10;
+}
+
+button[type='submit'] {
+  @apply bg-crimson-10 text-crimson-2 mt-2 w-[125px] rounded-xl m-auto py-1 hover:bg-crimson-11;
+}
+
+span {
+  @apply text-crimson-12 mt-1;
+}
